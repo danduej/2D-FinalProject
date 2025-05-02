@@ -9,17 +9,18 @@ public class Projectile : MonoBehaviour
 
     private Animator anim;
     private BoxCollider2D boxCollider;
+    private Rigidbody2D rb;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        rb = GetComponent<Rigidbody2D>(); // เพิ่มบรรทัดนี้
     }
+
     private void Update()
     {
         if (hit) return;
-        float movementSpeed = speed * Time.deltaTime * direction;
-        transform.Translate(movementSpeed, 0, 0);
 
         lifetime += Time.deltaTime;
         if (lifetime > 5) gameObject.SetActive(false);
@@ -30,10 +31,30 @@ public class Projectile : MonoBehaviour
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
+        rb.velocity = Vector2.zero; // หยุดการเคลื่อนที่
 
         if (collision.tag == "Enemy")
             collision.GetComponent<Health>()?.TakeDamage(1);
     }
+
+    // ใช้สำหรับเคลื่อนที่แบบวิถีโค้ง
+    public void Launch(Vector2 velocity)
+    {
+        gameObject.SetActive(true);
+        hit = false;
+        lifetime = 0;
+        boxCollider.enabled = true;
+
+        rb.velocity = velocity;
+
+        // หมุนตามทิศถ้าต้องการ (เลือกทำ)
+        float localScaleX = transform.localScale.x;
+        if (Mathf.Sign(velocity.x) != Mathf.Sign(localScaleX))
+            localScaleX = -localScaleX;
+        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
+    }
+
+    // ใช้สำหรับเคลื่อนที่แบบเส้นตรง (เดิม)
     public void SetDirection(float _direction)
     {
         lifetime = 0;
@@ -48,6 +69,7 @@ public class Projectile : MonoBehaviour
 
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
     }
+
     private void Deactivate()
     {
         gameObject.SetActive(false);
