@@ -486,9 +486,9 @@ GameObject:
   - component: {fileID: 22010963}
   - component: {fileID: 22010962}
   - component: {fileID: 22010961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Idle (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9118,8 +9118,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1775712891
-  m_SortingLayer: 2
+  m_SortingLayerID: -1645818593
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7720078550713291429, guid: 413986c4a668c374d8de72a47621b531, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9373,7 +9373,7 @@ Transform:
   m_GameObject: {fileID: 1145081054}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -1.1060002, z: 0}
+  m_LocalPosition: {x: 0.01, y: -1.16, z: 0}
   m_LocalScale: {x: 5.1, y: 5.5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9966,7 +9966,7 @@ GameObject:
   - component: {fileID: 1214863117}
   - component: {fileID: 1214863116}
   - component: {fileID: 1214863115}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Idle (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11189,8 +11189,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1775712891
-  m_SortingLayer: 2
+  m_SortingLayerID: -1645818593
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7720078550713291429, guid: 413986c4a668c374d8de72a47621b531, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -11215,9 +11215,9 @@ GameObject:
   - component: {fileID: 1365287380}
   - component: {fileID: 1365287379}
   - component: {fileID: 1365287378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Idle (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12094,11 +12094,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4168068043224895524, guid: 0e2c16b6f8713fc4294cb3283a3d4f74, type: 3}
       propertyPath: m_SortingLayer
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4168068043224895524, guid: 0e2c16b6f8713fc4294cb3283a3d4f74, type: 3}
       propertyPath: m_SortingLayerID
-      value: 0
+      value: -1775712891
       objectReference: {fileID: 0}
     - target: {fileID: 4168068043224895528, guid: 0e2c16b6f8713fc4294cb3283a3d4f74, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12398,8 +12398,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1775712891
-  m_SortingLayer: 2
+  m_SortingLayerID: -1645818593
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7720078550713291429, guid: 413986c4a668c374d8de72a47621b531, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14069,9 +14069,9 @@ GameObject:
   - component: {fileID: 1835881726}
   - component: {fileID: 1835881729}
   - component: {fileID: 1835881728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DesBg_Forward
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14121,7 +14121,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 545c84f8584145a489c2c889305f682e, type: 3}
-  m_Color: {r: 0.45977217, g: 0.7889806, b: 0.7924528, a: 1}
+  m_Color: {r: 0, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -14140,7 +14140,7 @@ Transform:
   m_GameObject: {fileID: 1835881725}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: -0.5, z: 0}
+  m_LocalPosition: {x: 3, y: -0.52, z: 0}
   m_LocalScale: {x: 0.13287652, y: 0.43888688, z: 0.12495}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15350,9 +15350,9 @@ GameObject:
   - component: {fileID: 2027804920}
   - component: {fileID: 2027804919}
   - component: {fileID: 2027804918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Idle (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15726,8 +15726,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1775712891
-  m_SortingLayer: 2
+  m_SortingLayerID: -1645818593
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7720078550713291429, guid: 413986c4a668c374d8de72a47621b531, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -15982,8 +15982,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1775712891
-  m_SortingLayer: 2
+  m_SortingLayerID: -1645818593
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7720078550713291429, guid: 413986c4a668c374d8de72a47621b531, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -16004,6 +16004,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 315890548}
     m_Modifications:
+    - target: {fileID: 6235141897478009249, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141897478009249, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1645818593
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141897617784934, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141897617784934, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1645818593
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141897866763207, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235141897866763207, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1645818593
+      objectReference: {fileID: 0}
     - target: {fileID: 6235141898098784502, guid: 6ef097aaca1c23643a506c6c573d6826, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.757849
